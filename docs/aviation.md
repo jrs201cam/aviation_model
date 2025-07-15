@@ -57,5 +57,9 @@ $$
 [3] : TBC
 
 
-# Appendix: link to markdown syntax
+# Appendix
+## Link to markdown syntax
 https://www.markdownguide.org/basic-syntax/
+
+## A link to mkdocs documentation
+https://www.mkdocs.org/user-guide/configuration/#documentation-layout
