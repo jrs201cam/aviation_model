@@ -7,6 +7,7 @@ The repository describes a basic aviation model using mkdocs documentation. It r
 python3 -m venv .venv
 source .venv/bin/activate
 ```
+
 Please install requirements using the following command:
 ```
 uv sync
