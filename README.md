@@ -7,8 +7,9 @@ The repository describes a basic aviation model using mkdocs documentation. It r
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-Please also install the requirements using the following command:
+
+Please install requirements using the following command:
 ```
-pip install -r requirements.txt
+uv sync
 ```
-To view the repository, enter `mkdocs serve` into the terminal with your virtual environment activated.
+To view the repository, enter `uv run mkdocs serve` into the terminal with your virtual environment activated.
