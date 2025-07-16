@@ -16,9 +16,9 @@ This model is a basic description of the aviation system
 
 | Name | Symbol | Unit | Value | Source |
 | ---- | ------ | ---- | ----- | ------ |
-| Passengers per year | $p_{y}$ | y^-1^ |4.46E9| [1]|
-| Seats per aircraft | $s$ | - | 150 | [2] |
-| Flights per aircraft per day | $f_{d}$ | d^-1^ | 2 | [3] |
+| Passengers per year | $p_{y}$ | y^-1^ |4.46E9| [@atagFactsFigures]|
+| Seats per aircraft | $s$ | - | 150 |  |
+| Flights per aircraft per day | $f_{d}$ | d^-1^ | 2 | |
 
 
 
@@ -47,17 +47,6 @@ a_{d} = \frac{p_{d}}{s \cdot f_{d}}
 \label{eqn_2}
 \end{equation}
 $$
-
-
-
-# References
-
-[1] : https://ourworldindata.org/grapher/number-airline-passengers
-
-[2] : TBC
-
-[3] : TBC
-
 
 # Appendix
 ## Link to markdown syntax
