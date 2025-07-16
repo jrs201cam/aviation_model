@@ -30,16 +30,22 @@ This model is a basic description of the aviation system
 | Aircraft per day | $a_{d}$ | d^-1^ |
 
 # Model equations
-The number of passengers travelling in the global fleet per day  ($p_{d}$) is given by equation *(1)*. Therefore, 12.2 million passengers travel on aircraft per day.
+The number of passengers travelling in the global fleet per day  ($p_{d}$) is given by equation ($\ref{eqn_1}$). Therefore, 12.2 million passengers travel on aircraft per day.
 
 $$
+\begin{equation}
 p_{d} = \frac{p_{y}}{\left[ d:y \right]}
+\label{eqn_1}
+\end{equation}
 $$
 
-The number of aircraft that are required in the global fleet per day ($a_{d}$) is given by equation *(2)*. Therefore, 41,000 aircraft travel per day.
+The number of aircraft that are required in the global fleet per day ($a_{d}$) is given by equation ($\ref{eqn_2}$). Therefore, 41,000 aircraft travel per day.
 
 $$
+\begin{equation}
 a_{d} = \frac{p_{d}}{s \cdot f_{d}}
+\label{eqn_2}
+\end{equation}
 $$
 
 
