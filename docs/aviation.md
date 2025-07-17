@@ -6,7 +6,7 @@ This model is a basic description of the aviation system
 
 **Table 1: Table of standard conversions**
 
-| Name | Symbol | Unit | Value | 
+| Name | Symbol | Unit | Value |
 | ---- | ------ | ---- | ----- |
 |Years to days| $\left[ d:y \right]$ | dy^-1^ | 365 |
 
@@ -24,7 +24,7 @@ This model is a basic description of the aviation system
 
 **Table 3: Table of outputs**
 
-| Name | Symbol | Unit | 
+| Name | Symbol | Unit |
 | ---- | ------ | ---- |
 | Passengers per day | $p_{d}$ | d^-1^ |
 | Aircraft per day | $a_{d}$ | d^-1^ |
