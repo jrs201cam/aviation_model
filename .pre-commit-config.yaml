@@ -16,9 +16,12 @@ repos:
     -   id: mixed-line-ending
     -   id: sort-simple-yaml
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  # Ruff version.
   rev: v0.12.3
   hooks:
     - id: ruff-check
       args: [ --fix ]
     - id: ruff-format
+- repo: https://github.com/astral-sh/uv-pre-commit
+  rev: 0.7.21
+  hooks:
+    - id: uv-lock
