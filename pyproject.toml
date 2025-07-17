@@ -15,19 +15,16 @@ docs = [
     "mkdocs-material>=9.6.15",
 ]
 
+[tool.ruff]
+line-length = 100
+
 [tool.ruff.lint]
 select = [
-    # pycodestyle
     "E",
-    # Pyflakes
     "F",
-    # pyupgrade
     "UP",
-    # flake8-bugbear
     "B",
-    # flake8-simplify
     "SIM",
-    # isort
     "I",
 ]
 
