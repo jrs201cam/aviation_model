@@ -27,5 +27,7 @@ jobs:
           UV_INDEX_GITLAB_PASSWORD: ${{ secrets.UV_INDEX_GITLAB_PASSWORD }}
       - name: Lint with Ruff
         run: uv run ruff format
+      - name: Static type check with mypy
+        run: uv run mypy .
       - name: Check with pre-commit
         run: uv run pre-commit run --all-files
