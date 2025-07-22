@@ -10,8 +10,7 @@ def passengers_per_day(*, passengers_per_year: float, days_per_year: float = 365
         days_per_year: The number of days in a year.
 
     """
-    passengers_per_day = passengers_per_year / days_per_year
-    return passengers_per_day
+    return passengers_per_year / days_per_year
 
 
 def aircraft_per_day(*, passengers_per_day: float, seats: float, flights_per_day: float) -> float:
@@ -25,5 +24,4 @@ def aircraft_per_day(*, passengers_per_day: float, seats: float, flights_per_day
             globally.
 
     """
-    aircraft_per_day = passengers_per_day / (seats * flights_per_day)
-    return aircraft_per_day
+    return passengers_per_day / (seats * flights_per_day)
