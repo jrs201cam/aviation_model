@@ -1,8 +1,9 @@
 """Analysis to determine number of aircraft per day."""
 
 # import function file
+import camia_engine as engine
+
 import aviation
-from aviation import _engine as engine
 
 # inputs
 days_per_year = 365.25
