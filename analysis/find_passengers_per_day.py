@@ -4,7 +4,7 @@
 import aviation
 
 # inputs
-days_per_year = 365.0
+days_per_year = 365.25
 passengers_per_year = 4.46e9
 
 # model

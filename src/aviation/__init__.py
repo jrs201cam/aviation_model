@@ -8,3 +8,5 @@ Modules:
 __all__ = ("aircraft_per_day", "passengers_per_day")
 
 from aviation.aviation import aircraft_per_day, passengers_per_day
+
+transforms = (aircraft_per_day, passengers_per_day)
