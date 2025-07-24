@@ -1,23 +1,33 @@
 """Modelling the global fleet."""
 
+import typing
+
 import camia_model as model
+from camia_model.units import Quantity, day, year
+
+from aviation.units import aircraft, journey, passenger
 
 
 @model.transform
-def passengers_per_day(passengers_per_year: float, days_per_year: float = 365.25) -> float:
+def passengers_per_day(
+    passengers_per_year: typing.Annotated[Quantity, passenger / year],
+) -> typing.Annotated[Quantity, passenger / day]:
     """The number of passengers per day globally.
 
     Args:
         passengers_per_year: The number of passengers flying per
             year globally.
-        days_per_year: The number of days in a year.
 
     """
-    return passengers_per_year / days_per_year
+    return passengers_per_year.convert_to(passenger / day)
 
 
 @model.transform
-def aircraft_per_day(passengers_per_day: float, seats: float, flights_per_day: float) -> float:
+def aircraft_per_day(
+    passengers_per_day: typing.Annotated[Quantity, passenger / day],
+    seats: typing.Annotated[Quantity, passenger / aircraft],
+    flights_per_day: typing.Annotated[Quantity, journey / (aircraft * day)],
+) -> typing.Annotated[Quantity, aircraft]:
     """The size of the required global fleet i.e., the number of aircraft per day.
 
     Args:
@@ -28,4 +38,5 @@ def aircraft_per_day(passengers_per_day: float, seats: float, flights_per_day: f
             globally.
 
     """
-    return passengers_per_day / (seats * flights_per_day)
+    aircraft_per_journey = 1.0 * aircraft / journey
+    return passengers_per_day / (seats * flights_per_day * aircraft_per_journey)
